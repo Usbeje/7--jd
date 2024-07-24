@@ -36,12 +36,9 @@ case $pilihan in
       echo "Berkas yt.sh tidak ditemukan!"
     fi
     ;;
-  3)
-    # Menjalankan berkas chatgpt.py
+  3) 
     if [ -f "chatgpt.py" ]; then
-      # Menggunakan ssh untuk menampilkan hasil di Termux dari Gitpod
-      echo "Menjalankan chatgpt.py di Gitpod..."
-      ssh 'usbeje-7jd-a25ek69bscb#zh_8CgYgvXvK3uJutp-3JXavYX_Z1569@usbeje-7jd-a25ek69bscb.ssh.ws-us115.gitpod.io' 'python3 /workspace/7--jd/chatgpt.py'
+      python chatgpt.py
     else
       echo "Berkas chatgpt.py tidak ditemukan!"
     fi
